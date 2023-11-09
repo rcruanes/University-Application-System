@@ -15,7 +15,8 @@ CREATE TABLE users (
 CREATE TABLE applications (
     a_appkey     decimal(8,0) not null,
     a_username        varchar(55) not null,
-    a_schoolname     varchar(55) not null
+    a_schoolname     varchar(55) not null,
+    a_majorkey      decimal(8,0) not null
 );
 CREATE TABLE schools (
     s_schoolname     varchar(55) not null,
@@ -25,6 +26,7 @@ CREATE TABLE schools (
     s_type  varchar(55) not null
 );
 CREATE TABLE major (
+    m_majorkey varchar(55) not null,
     m_schoolname   varchar(55) not null,
     m_major     varchar(55) not null,
     m_minor        varchar(55),
