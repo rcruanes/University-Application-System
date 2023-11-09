@@ -1,6 +1,6 @@
-SELECT m_major, COUNT(a.a_majorkey) AS major_count
-FROM major m
-LEFT JOIN applications a ON m.m_majorkey = a.a_majorkey
-GROUP BY m_major
-ORDER BY major_count DESC
+SELECT m_degree AS most_popular_major, COUNT(*) AS application_count
+FROM applications
+INNER JOIN major ON applications.a_majorkey = major.m_degreekey
+GROUP BY m_degree
+ORDER BY application_count DESC
 LIMIT 1;
