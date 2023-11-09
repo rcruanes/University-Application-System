@@ -1,11 +1,9 @@
 .mode csv
 .separator |
 
-.import data/customer.tbl customer
-.import data/lineitem.tbl lineitem
-.import data/nation.tbl nation
-.import data/orders.tbl orders
-.import data/part.tbl part
-.import data/partsupp.tbl partsupp
-.import data/region.tbl region
-.import data/supplier.tbl supplier
+.import data/users.tbl users
+.import data/applications.tbl applications
+.import data/schools.tbl schools
+.import data/major.tbl major
+.import data/essays.tbl essays
+.import data/recommendations.tbl recommendations
