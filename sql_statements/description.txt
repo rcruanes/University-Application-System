@@ -1,0 +1,32 @@
+1. given location of school. find the number of applicants for each gender.
+2. given location of school. find the number of applicants for each race
+------------------------------------------------------------------
+3. for all schools find the average gpa of its applicants
+------------------------------------------------------------
+4. find total number of students that each professor had recommended
+--------------------------------------------
+5. given a email. find the types of schools that he had applied to
+6. given a email. find the location of schools that he had applied to
+--------------------------------------------------------------
+7. given a email. find the majors that he had applied to
+--------------------------------------------------------------
+8. find the users that had applied both majors and minors
+----------------------------------------------------
+9. find the number of student with gpa above 3.5
+10. find the number of student that has extracurricular
+-----------------------------------------------------
+11. find the number of students that has more than 3 applications
+12. find the number of students that has only one applications
+----------------------------------------------------
+13. find the number of applications that have been send the more than three schools
+14. find the number of applications that have been send to only one school
+------------------------------------------------------------------------------
+15. find the applications that have been send to the most school
+--------------------------------------------------------------------
+16. find the most popular major 
+17. find the most popular minor
+18. find the most popular athletics
+-----------------------------------------
+19. find the number of different employment that recommendation letter are written from
+-----------------------------------------------
+20. find the average gpa of users
