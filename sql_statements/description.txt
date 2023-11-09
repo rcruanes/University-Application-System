@@ -18,8 +18,8 @@
 11. find the number of students that has more than 3 applications
 12. find the number of students that has only one applications
 ----------------------------------------------------
-13. find the number of applications that have been send the more than three schools
-14. find the number of applications that have been send to only one school
+13. find the number of students who has send applications to more than three schools
+14. find the number of students who has send applications to only one school
 ------------------------------------------------------------------------------
 15. find the applications that have been send to the most school
 --------------------------------------------------------------------

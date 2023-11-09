@@ -1,3 +1,3 @@
-SELECT count(*)
+SELECT *
 from users 
-WHERE u_extracurricular <> ''
+WHERE u_extracurriculars <> '';
