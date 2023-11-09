@@ -1,9 +1,9 @@
 .mode csv
-.separator |
+.separator '|'
 
-.import data/users.tbl users
-.import data/applications.tbl applications
-.import data/schools.tbl schools
-.import data/major.tbl major
-.import data/essays.tbl essays
-.import data/recommendations.tbl recommendations
+.import UAS_data/users.tbl users
+.import UAS_data/applications.tbl applications
+.import UAS_data/schools.tbl schools
+.import UAS_data/major.tbl major
+.import UAS_data/essays.tbl essays
+.import UAS_data/recommendations.tbl recommendations
