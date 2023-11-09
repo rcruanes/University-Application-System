@@ -26,11 +26,10 @@ CREATE TABLE schools (
     s_type  varchar(55) not null
 );
 CREATE TABLE major (
-    m_majorkey varchar(55) not null,
+    m_degreekey varchar(55) not null,
     m_schoolname   varchar(55) not null,
-    m_major     varchar(55) not null,
-    m_minor        varchar(55),
-    m_athletics     varchar(55)
+    m_degree     varchar(55) not null,
+    m_type       varchar(55)
 );
 CREATE TABLE essays (
     es_essay       varchar(152) not null,
