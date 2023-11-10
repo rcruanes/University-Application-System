@@ -11,30 +11,30 @@ CREATE TABLE users (
     u_gpa  decimal(3,0) not null,
     u_schoolname       varchar(55) not null,
     u_extracurriculars    varchar(152)
-);
+)
 CREATE TABLE applications (
     a_appkey     decimal(8,0) not null,
     a_username        varchar(55) not null,
     a_schoolname     varchar(55) not null,
     a_majorkey      decimal(8,0) not null
-);
+)
 CREATE TABLE schools (
     s_schoolname     varchar(55) not null,
     s_city     varchar(55) not null,
     s_country   varchar(55) not null,
     s_finaid    bit(1) not null,
     s_type  varchar(55) not null
-);
+)
 CREATE TABLE major (
     m_degreekey varchar(55) not null,
     m_schoolname   varchar(55) not null,
     m_degree     varchar(55) not null,
     m_type       varchar(55)
-);
+)
 CREATE TABLE essays (
     es_essay       varchar(152) not null,
     e_appkey       decimal(9,0) not null
-);
+)
 CREATE TABLE recommendations (
     r_professors    varchar(55) not null,
     r_employment     varchar(55) not null,
