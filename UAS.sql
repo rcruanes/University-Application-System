@@ -16,8 +16,8 @@ CREATE TABLE applications (
     a_appkey     decimal(8,0) not null,
     a_username        varchar(55) not null,
     a_schoolname     varchar(55) not null,
-    a_majorkey      decimal(8,0) not null
-)
+    a_degreekey      varchar(55) not null
+);
 CREATE TABLE schools (
     s_schoolname     varchar(55) not null,
     s_city     varchar(55) not null,
