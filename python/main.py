@@ -152,8 +152,13 @@ def oldApp(_conn, username):
 
         print(f"Application key: {app[0]} School: {app[2]} Degree: {degree[0][0]} Type: {degree[0][1]}")
         
+def modifyApp(_conn, username):
+    oldApp(_conn,username)
+    cur = _conn.cursor()
+    cur.execute(    
 
-
+        (username,)
+    )
 
 
 def main():
@@ -171,12 +176,14 @@ def main():
             else :
                 username = fetchInfo(conn)
         #action
-        action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. Quit Enter 0: "))
+        action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. View pass application Enter 3. Quit Enter 0: "))
         while(action!= 0):
             if(action == 1):
                 newApp(conn,username)
             elif (action == 2):
                 oldApp(conn,username)
+            elif(action ==3):
+                modifyApp(conn,username)
             else:
                 print("Invalid input")
             action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. Quit Enter 0: "))
