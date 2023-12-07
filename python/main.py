@@ -174,9 +174,9 @@ def main():
         action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. Quit Enter 0: "))
         while(action!= 0):
             if(action == 1):
-                newApp(conn,"nick")
+                newApp(conn,username)
             elif (action == 2):
-                oldApp(conn,"nick")
+                oldApp(conn,username)
             else:
                 print("Invalid input")
             action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. Quit Enter 0: "))
