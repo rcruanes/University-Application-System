@@ -151,14 +151,20 @@ def oldApp(_conn, username):
         degree = cur.fetchall()
 
         print(f"Application key: {app[0]} School: {app[2]} Degree: {degree[0][0]} Type: {degree[0][1]}")
-        
+    _conn.commit()     
 def modifyApp(_conn, username):
     oldApp(_conn,username)
     cur = _conn.cursor()
+    appkey = input("Enter appkey: ")
+    majorkey = input("Enter majorkey: ")
     cur.execute(    
-
-        (username,)
+        '''
+        update applications set a_majorkey = ? where a_appkey = ?        
+        ''',
+        (appkey,majorkey)
     )
+    print("Done!")
+    _conn.commit()
 
 
 def main():
@@ -176,7 +182,7 @@ def main():
             else :
                 username = fetchInfo(conn)
         #action
-        action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. View pass application Enter 3. Quit Enter 0: "))
+        action = int(input("What do you want to do? New Application Enter 1. Edit pass application Enter 2. View pass application Enter 3. Quit Enter 0: "))
         while(action!= 0):
             if(action == 1):
                 newApp(conn,username)
@@ -186,7 +192,7 @@ def main():
                 modifyApp(conn,username)
             else:
                 print("Invalid input")
-            action = int(input("What do you want to do? New Application Enter 1. View pass application Enter 2. Quit Enter 0: "))
+            action = int(input("What do you want to do? New Application Enter 1. Edit pass application Enter 2. View pass application Enter 3. Quit Enter 0: "))
         print("Bye")
     closeConnection(conn, database)
 
